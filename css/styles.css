@@ -1,0 +1,353 @@
+@import url("css/style.css");
+* {
+    margin: 0;
+    padding: 0;
+    color: white;
+    background-color: rgb(17, 18, 22);
+}
+
+.container {
+    flex-direction: column;
+    display: flex;
+}
+
+.Tcontainer {
+    padding-top: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.anim {
+    padding-bottom: 10px;
+    position: relative;
+    display: inline-block;
+    font-family: monospace, Arial, Helvetica, sans-serif;
+    line-height: 14px;
+    font-size: 14px;
+}
+
+.anim::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: -5px;
+    display: inline-block;
+    background-color: #606060;
+    vertical-align: top;
+    width: 6px;
+    height: 12px;
+    -webkit-animation: blink 1s step-end infinite;
+    animation: blink 1s step-end infinite;
+}
+
+@-webkit-keyframes blink {
+    0% {
+        opacity: 1.0;
+    }
+    50% {
+        opacity: 0.0;
+    }
+    100% {
+        opacity: 1.0;
+    }
+}
+
+@keyframes blink {
+    0% {
+        opacity: 1.0;
+    }
+    50% {
+        opacity: 0.0;
+    }
+    100% {
+        opacity: 1.0;
+    }
+}
+
+.dark button1 {
+    display: flex;
+    flex-wrap: wrap;
+    float: right;
+    outline: none;
+    width: 35px;
+    height: 35px;
+    content: url('sun.png');
+}
+
+.dark img1 {
+    content: url(final.png);
+}
+
+.dark-mode button1 {
+    content: url('moon.png');
+}
+
+.dark-mode img1 {
+    width: 75px;
+    height: auto;
+    object-fit: contain;
+    content: url('alex_logoblack.png');
+}
+
+.dark-mode * {
+    background-color: white;
+    color: black;
+}
+
+.Theader {
+    margin-top: 10px;
+    font-family: Tahoma, Arial;
+    text-transform: uppercase;
+}
+
+.Theader h1 {
+    font-family: Impact, Tahoma, Arial;
+    font-weight: 100;
+}
+
+.Theader h5 {
+    margin-top: 5px;
+}
+
+.img {
+    width: 75%;
+    height: auto;
+    align-self: center;
+    object-fit: contain;
+}
+
+.aboutMe {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.MainContent {
+    padding-top: 30px;
+    padding-bottom: 20px;
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    font-family: Tahoma, Arial;
+    text-transform: uppercase;
+    font-size: 25px;
+}
+
+.bio {
+    width: 75%;
+    display: flex;
+    align-self: center;
+    font-family: Tahoma, Arial;
+    text-align: left;
+    line-height: 1.6em;
+    text-align: justify;
+}
+
+.linksPro {
+    width: 75%;
+    /* display: flex; */
+    align-self: center;
+    font-family: Tahoma, Arial;
+    text-align: left;
+    line-height: 1.6em;
+    text-align: justify;
+}
+
+.linksPro a {
+    color: blue;
+}
+
+.minHead {
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.minHead a {
+    text-decoration: none;
+}
+
+.minHead a:visited {
+    text-decoration: none;
+}
+
+.minHead a:hover {
+    text-decoration: none;
+    opacity: 0.5;
+    color: burlywood;
+}
+
+.minHead a:focus {
+    text-decoration: none;
+}
+
+.minHead a:active {
+    text-decoration: none;
+}
+
+.CurBox {
+    flex-direction: column;
+    border: 2px solid grey;
+    padding: 15px;
+    margin: 10px;
+    box-sizing: border-box;
+    font-family: Tahoma, Arial;
+}
+
+.miniData {
+    font-family: Tahoma, Arial;
+    font-size: 13px;
+}
+
+.exp {
+    width: 75%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-self: center;
+    flex-wrap: wrap;
+}
+
+.Tasks {
+    width: 75%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-self: center;
+    flex-wrap: wrap;
+}
+
+.Voluntry {
+    width: 75%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-self: center;
+    flex-wrap: wrap;
+}
+
+.ReachME {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.RHead {
+    padding-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    font-family: Tahoma, Arial;
+    text-transform: uppercase;
+    font-size: 25px;
+}
+
+.ReachMELinks {
+    align-self: center;
+    text-align: center;
+}
+
+.fa {
+    padding: 10px;
+    font-size: 15px;
+    width: 15px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 50%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+
+.fa-github {
+    background: #000;
+    color: white;
+}
+
+.fa-google {
+    background: #dd4b39;
+    color: white;
+}
+
+.fa-linkedin {
+    background: #007bb5;
+    color: white;
+}
+
+.FooterReachME {
+    font-size: 10px;
+    font-family: Tahoma, Arial;
+    text-transform: uppercase;
+}
+
+.Footer {
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    font-size: 15px;
+    font-family: Tahoma, Arial;
+    text-align: right;
+    align-self: center;
+}
+
+.Logo {
+    width: 75px;
+    height: auto;
+    object-fit: contain;
+}
+
+
+/*Skills*/
+
+
+/* .Skills {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    width: 60%;
+} */
+
+.skillsContainer {
+    width: 50%;
+    line-height: 1rem;
+    padding-bottom: 20px;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    width: 60%;
+    justify-content: center;
+}
+
+.left-container {
+    float: left;
+}
+
+.right-container {
+    float: left;
+}
+
+.certImg {
+    height: 300px;
+    width: 400px;
+}
+
+.certCap {
+    text-align: center;
+}
